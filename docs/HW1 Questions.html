@@ -23,24 +23,61 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="HW1 Questions_files/libs/clipboard/clipboard.min.js"></script>
-<script src="HW1 Questions_files/libs/quarto-html/quarto.js"></script>
-<script src="HW1 Questions_files/libs/quarto-html/popper.min.js"></script>
-<script src="HW1 Questions_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="HW1 Questions_files/libs/quarto-html/anchor.min.js"></script>
-<link href="HW1 Questions_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="HW1 Questions_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="HW1 Questions_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="HW1 Questions_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="HW1 Questions_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-79108a0fc1995748cbd19a5b0e3e3e7c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
 </head>
 
 <body class="fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -95,15 +132,16 @@ ul.task-list li input[type="checkbox"] {
 <pre><code>[1] "list"</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>           Length Class  Mode     
-x          512    -none- numeric  
-y          512    -none- numeric  
-bw           1    -none- numeric  
-n            1    -none- numeric  
-old.coords   1    -none- logical  
-call         2    -none- call     
-data.name    1    -none- character
-has.na       1    -none- logical  </code></pre>
+<pre><code>List of 8
+ $ x         : num [1:512] -0.656 -0.648 -0.64 -0.633 -0.625 ...
+ $ y         : num [1:512] 0.00161 0.00178 0.00197 0.00217 0.00239 ...
+ $ bw        : num 0.252
+ $ n         : int 150
+ $ old.coords: logi FALSE
+ $ call      : language density.default(x = iris$Petal.Width)
+ $ data.name : chr "iris$Petal.Width"
+ $ has.na    : logi FALSE
+ - attr(*, "class")= chr "density"</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -113,10 +151,11 @@ has.na       1    -none- logical  </code></pre>
 </div>
 </div>
 </div>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

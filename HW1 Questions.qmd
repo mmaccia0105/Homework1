@@ -49,6 +49,6 @@ Regarding data scientists, I also work a lot with our Pharmacy and Therapeuticâ€
 y <- density(iris$Petal.Width) #define y
 class(y) #determine class of y
 typeof(y) #determine type of y
-summary(y) #determine structure of y
+str(y) #determine structure of y
 plot(y) #plot y
 ```
