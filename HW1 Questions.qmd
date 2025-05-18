@@ -44,11 +44,34 @@ Regarding data scientists, I also work a lot with our Pharmacy and Therapeuticâ€
 
 ## Some R Code
 
+Define y as the density of petal width within the Iris dataset.
+
+First will be the class of y:
+
 ```{r}
 #| echo: false #hide code
 y <- density(iris$Petal.Width) #define y
 class(y) #determine class of y
+
+```
+
+Next, we will look at the type of y:
+
+```{r}
+#| echo: false #hide code
 typeof(y) #determine type of y
+```
+
+Third, the structure of y:
+
+```{r}
+#| echo: false #hide code
 str(y) #determine structure of y
+```
+
+Lastly, we will plot the density of petal.width from the Iris dataset:
+
+```{r}
+#| echo: false #hide code
 plot(y) #plot y
 ```
